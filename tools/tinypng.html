@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TinyPNG 官网入口：PNG/JPEG 压缩、批量处理与 API 用法 | 拾光导航</title>
+<meta name="description" content="TinyPNG 用智能有损压缩减小图片体积。本文说明压缩原理、批量处理限制、格式支持与接入自动化流程的方法。">
+<meta name="keywords" content="TinyPNG,图片压缩,PNG压缩,JPEG压缩,在线压缩工具">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/tinypng.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="TinyPNG 官网入口：PNG/JPEG 压缩、批量处理与 API 用法 | 拾光导航">
+<meta property="og:description" content="TinyPNG 用智能有损压缩减小图片体积。本文说明压缩原理、批量处理限制、格式支持与接入自动化流程的方法。">
+<meta property="og:url" content="https://www.appsnav.com/tools/tinypng.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TinyPNG 免费吗？", "acceptedAnswer": {"@type": "Answer", "text": "有免费额度，按月计算压缩次数，单次文件数量有限制。高频使用或接 API 需要付费。"}}, {"@type": "Question", "name": "压缩后画质会变差吗？", "acceptedAnswer": {"@type": "Answer", "text": "会有不可逆的细节损失，但正常观看距离下通常看不出来。需要印刷或存档的图，保留原件。"}}, {"@type": "Question", "name": "支持 WebP 吗？", "acceptedAnswer": {"@type": "Answer", "text": "支持，WebP 的压缩效果通常比 PNG、JPEG 更明显，适合网页素材。"}}, {"@type": "Question", "name": "能批量压缩吗？", "acceptedAnswer": {"@type": "Answer", "text": "网页版支持多选批量，但单次数量有限；大批量建议用 API 或桌面插件接入流程。"}}, {"@type": "Question", "name": "透明背景会丢吗？", "acceptedAnswer": {"@type": "Answer", "text": "PNG 的透明通道会保留。半透明边缘可能出现轻微色带，图标类素材建议放大检查一遍。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "效率与工具", "item": "https://www.appsnav.com/category/tools.html"}, {"@type": "ListItem", "position": 3, "name": "TinyPNG", "item": "https://www.appsnav.com/tools/tinypng.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link active" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/tools.html">效率与工具</a><i>/</i><span>TinyPNG</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">▧</div>
+      <div>
+        <h1>TinyPNG 官网入口与使用指南</h1>
+        <p class="head-lead">网页加载慢，很多时候不是服务器的问题，是图太大。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>效率与工具</b></span><span class="meta-chip">形态 <b>网页 / 插件 / API</b></span><span class="meta-chip">收费 <b>免费额度 + 付费套餐</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://tinypng.com" target="_blank" rel="noopener nofollow">打开 TinyPNG 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">TinyPNG</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页 / 插件 / API</div></div><div class="fact"><div class="k">支持格式</div><div class="v">PNG、JPEG、WebP</div></div><div class="fact"><div class="k">收费方式</div><div class="v">免费额度 + 付费套餐</div></div><div class="fact"><div class="k">压缩方式</div><div class="v">智能有损，保留透明通道</div></div></div>
+      <h2>它压的是什么</h2>
+<p>PNG 的体积主要浪费在颜色量化上：一张图里实际用到的颜色远少于格式允许的颜色数。TinyPNG 把这部分冗余去掉，再用一套算法把损失控制在肉眼难以察觉的范围。</p>
+<p>JPEG 的处理思路不同，重点在压缩曲线和色度采样。两类格式的处理逻辑分开，效果都比较稳定。</p>
+<p>结果是：体积常能降到原来的一半以下，画质在正常观看距离下基本看不出差别。但它是不可逆的，反复压缩会累积损失。</p>
+<h2>网页与 App 场景怎么用</h2>
+<ol>
+  <li><strong>先备份原图。</strong>压缩不可逆，设计源文件单独存档。</li>
+  <li><strong>按用途定尺寸。</strong>先把图裁到实际展示尺寸，再压缩。一张 3000px 宽的图压到 200KB，和裁到 1200px 再压，效果差很多。</li>
+  <li><strong>批量拖入。</strong>网页版支持多选，压缩完打包下载，文件名会自动加后缀便于区分。</li>
+  <li><strong>检查透明通道。</strong>PNG 的透明背景会保留，但半透明边缘可能出现轻微色带，按钮、图标类素材要放大看一眼。</li>
+  <li><strong>上线后测加载。</strong>压缩只是第一步，配合 CDN 和合适的缓存策略才算完成。</li>
+</ol>
+<h2>开发者的接入方式</h2>
+<p>提供 API，按压缩次数计费，返回压缩后的文件和节省比例。适合接进 CMS 的上传流程，让编辑不用手动处理。</p>
+<p>常见做法是：上传时先调接口压缩，再把结果写入对象存储。注意设置超时和失败回退，别让压缩环节卡住整个上传。</p>
+<p>也有现成的插件，WordPress、Figma 等生态里都能找到，装完自动处理，适合不想写代码的人。</p>
+<h2>免费额度与限制</h2>
+<p>网页版单次可上传的文件数量和单文件体积有上限，超出的部分需要分批，或使用付费套餐。</p>
+<p>免费额度按压缩次数计算，每月重置。个人博客、少量商品图基本够用；电商站每天上新几十张图，很快就会触顶。</p>
+<p>付费套餐提升单次数量和 API 调用量，团队协作还能共享额度。</p>
+<h2>什么时候不该用它</h2>
+<ul>
+  <li><strong>需要无损压缩。</strong>印刷、摄影归档这类场景，改用无损工具或直接保留原图。</li>
+  <li><strong>需要极致小体积。</strong>WebP、AVIF 在同等画质下更小，先转格式再谈压缩。</li>
+  <li><strong>动图。</strong>GIF 不在处理范围内，动图需要专门的优化工具。</li>
+  <li><strong>已压过多次的图。</strong>重复压缩只会变糊，找不到原图就到此为止。</li>
+</ul>
+<h2>和同类压缩工具的差别</h2>
+<div class="table-wrap">
+<table class="cmp">
+  <thead><tr><th>维度</th><th>TinyPNG</th><th>格式转换类工具</th><th>本地批处理</th></tr></thead>
+  <tbody>
+    <tr><td>压缩率</td><td>稳定，50% 以上常见</td><td>取决于参数</td><td>可精细调参</td></tr>
+    <tr><td>操作门槛</td><td>最低，拖进去就行</td><td>低</td><td>需装软件</td></tr>
+    <tr><td>批量能力</td><td>网页版有限，API 可自动化</td><td>中等</td><td>最强</td></tr>
+    <tr><td>透明通道</td><td>保留</td><td>部分会丢</td><td>取决于工具</td></tr>
+  </tbody>
+</table>
+</div>
+
+      <h2>TinyPNG 常见问题</h2><div class="faq"><details><summary>TinyPNG 免费吗？</summary><p class="answer">有免费额度，按月计算压缩次数，单次文件数量有限制。高频使用或接 API 需要付费。</p></details><details><summary>压缩后画质会变差吗？</summary><p class="answer">会有不可逆的细节损失，但正常观看距离下通常看不出来。需要印刷或存档的图，保留原件。</p></details><details><summary>支持 WebP 吗？</summary><p class="answer">支持，WebP 的压缩效果通常比 PNG、JPEG 更明显，适合网页素材。</p></details><details><summary>能批量压缩吗？</summary><p class="answer">网页版支持多选批量，但单次数量有限；大批量建议用 API 或桌面插件接入流程。</p></details><details><summary>透明背景会丢吗？</summary><p class="answer">PNG 的透明通道会保留。半透明边缘可能出现轻微色带，图标类素材建议放大检查一遍。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/ilovepdf.html" data-cat="tools" data-k="iLovePDF iLovePDF · PDF 工具箱 合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▦</div>
+    <div>
+      <div class="card-name">iLovePDF</div>
+      <div class="card-sub">iLovePDF · PDF 工具箱</div>
+    </div>
+  </div>
+  <p class="card-desc">合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/notion.html" data-cat="tools" data-k="Notion Notion · 笔记与协作 笔记、数据库、看板、文档混在一块，团队的知识库通常从这儿长出来。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▨</div>
+    <div>
+      <div class="card-name">Notion</div>
+      <div class="card-sub">Notion · 笔记与协作</div>
+    </div>
+  </div>
+  <p class="card-desc">笔记、数据库、看板、文档混在一块，团队的知识库通常从这儿长出来。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/excalidraw.html" data-cat="tools" data-k="Excalidraw Excalidraw · 手绘白板 手绘风格的在线白板，打开就能画，适合画流程、画架构、讲思路。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▩</div>
+    <div>
+      <div class="card-name">Excalidraw</div>
+      <div class="card-sub">Excalidraw · 手绘白板</div>
+    </div>
+  </div>
+  <p class="card-desc">手绘风格的在线白板，打开就能画，适合画流程、画架构、讲思路。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

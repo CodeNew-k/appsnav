@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Midjourney 官网入口：提示词写法、参数与出图流程 | 拾光导航</title>
+<meta name="description" content="Midjourney 的图像质感和美学风格在同类里辨识度高。本文整理提示词结构、常用参数、订阅档位与实际出图流程。">
+<meta name="keywords" content="Midjourney,Midjourney官网,AI绘画,文生图,AI插画">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/midjourney.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="Midjourney 官网入口：提示词写法、参数与出图流程 | 拾光导航">
+<meta property="og:description" content="Midjourney 的图像质感和美学风格在同类里辨识度高。本文整理提示词结构、常用参数、订阅档位与实际出图流程。">
+<meta property="og:url" content="https://www.appsnav.com/tools/midjourney.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Midjourney 有免费版吗？", "acceptedAnswer": {"@type": "Answer", "text": "新账号通常有少量试用额度，主要用于体验，商用需要订阅。具体额度以官网当前说明为准。"}}, {"@type": "Question", "name": "生成的图能商用吗？", "acceptedAnswer": {"@type": "Answer", "text": "付费订阅用户在多数情况下拥有商业使用权，但涉及品牌、名人、特定 IP 的画面另有约束。正式投放前读一遍官方授权条款。"}}, {"@type": "Question", "name": "必须用英文提示词吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是必须，但英文对细节的控制更精确。中文描述可以先写清楚，再按“主体 + 光线 + 镜头 + 风格”的结构翻成短句。"}}, {"@type": "Question", "name": "为什么同样的提示词，两次结果差很多？", "acceptedAnswer": {"@type": "Answer", "text": "生成带随机性。把 --seed 固定下来，再逐条改提示词，才能判断是哪句话在起作用。"}}, {"@type": "Question", "name": "能做中文海报吗？", "acceptedAnswer": {"@type": "Answer", "text": "画面可以，文字不行。中文标题、价格、二维码这类元素，导出后用设计软件加，效果才干净。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "AI 绘画与影音", "item": "https://www.appsnav.com/category/ai-media.html"}, {"@type": "ListItem", "position": 3, "name": "Midjourney", "item": "https://www.appsnav.com/tools/midjourney.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link active" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/ai-media.html">AI 绘画与影音</a><i>/</i><span>Midjourney</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">◭</div>
+      <div>
+        <h1>Midjourney 官网入口与使用指南</h1>
+        <p class="head-lead">它的画面有一套统一的审美倾向，出片不靠运气，靠调参。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>AI 绘画与影音</b></span><span class="meta-chip">形态 <b>网页版，早期以 Discord 为主</b></span><span class="meta-chip">收费 <b>订阅制，按额度分档</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.midjourney.com" target="_blank" rel="noopener nofollow">打开 Midjourney 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">Midjourney</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页版，早期以 Discord 为主</div></div><div class="fact"><div class="k">输出类型</div><div class="v">静态图像</div></div><div class="fact"><div class="k">收费方式</div><div class="v">订阅制，按额度分档</div></div><div class="fact"><div class="k">提示词语言</div><div class="v">英文效果更稳定</div></div></div>
+      <h2>为什么它的图看起来“高级”</h2>
+<p>同一段描述，交给不同模型会得到完全不同的结果。Midjourney 的默认输出偏电影感：光比大、色彩克制、构图留白多，细节处理上倾向于“看起来像拍出来的”，而不是“画出来的”。</p>
+<p>这不完全是模型能力，也有审美倾向的功劳。它默认就往某种风格上收，所以哪怕提示词写得很糙，出图也不至于难看。代价是——如果你想跳出这套风格，需要额外下功夫。</p>
+<p>适合的场景很明确：海报主视觉、专辑封面、插画配图、产品概念图。不适合需要精确文字、精确排版、精确尺寸标注的图。</p>
+<h2>提示词的四段结构</h2>
+<p>把提示词写成分层结构，比堆一堆形容词可控得多。</p>
+<ol>
+  <li><strong>主体：</strong>谁/什么，处于什么动作或状态。越具体越好，“一只蹲在窗台的橘猫”优于“一只猫”。</li>
+  <li><strong>环境与光线：</strong>时间、天气、光源方向。“清晨侧逆光，室内暖色台灯”会直接改变画面情绪。</li>
+  <li><strong>镜头与材质：</strong>35mm、微距、胶片颗粒、哑光金属。这一层决定“像什么拍的”。</li>
+  <li><strong>风格与参考：</strong>极简主义、复古印刷、某类画派。注意人名和品牌名容易触发审核。</li>
+</ol>
+<blockquote>示例：一只蹲在老式木窗台上的橘猫，清晨侧逆光，窗外是模糊的街道，35mm 胶片质感，低饱和，浅景深，安静的氛围 --ar 3:4</blockquote>
+<h2>六个真正影响结果的参数</h2>
+<div class="feats">
+  <div class="feat"><p class="feat-name">--ar 画幅</p><p>先定比例再做图。竖版海报用 3:4 或 2:3，横版 banner 用 16:9。</p></div>
+  <div class="feat"><p class="feat-name">--stylize 风格强度</p><p>数值越高，画面越“艺术化”，也越容易偏离你的描述。</p></div>
+  <div class="feat"><p class="feat-name">--chaos 变化幅度</p><p>四张图的差异度。想要灵感就调高，想要稳定就调低。</p></div>
+  <div class="feat"><p class="feat-name">--seed 种子</p><p>固定种子后，改提示词能看出“到底哪句话影响了画面”。</p></div>
+  <div class="feat"><p class="feat-name">--no 排除项</p><p>把不想要的元素写在这里，比在正向描述里反复强调“不要”有效。</p></div>
+  <div class="feat"><p class="feat-name">图生图与风格参考</p><p>给参考图能锁定色调和构图，适合做系列稿、保持品牌一致性。</p></div>
+</div>
+<h2>一次完整的出图流程</h2>
+<p><strong>第一步，用低消耗模式试方向。</strong>先跑几组粗糙的提示词，只看构图和气质，别抠细节。</p>
+<p><strong>第二步，锁定一张做变体。</strong>选中方向对的那张，生成变体，在相似构图里挑细节最好的。</p>
+<p><strong>第三步，放大并修细节。</strong>放大后如果手部、文字、边缘有问题，用局部重绘处理，不要整张重生成。</p>
+<p><strong>第四步，存参数。</strong>把最终提示词、种子、参考图记在同一个文件里。下一张系列稿直接复用，风格才不会飘。</p>
+<p>整套流程跑顺之后，一张能用的图大概十到二十分钟；追求精细的商业稿，时间主要花在局部重绘上。</p>
+<h2>订阅怎么选</h2>
+<p>档位差别主要在三处：每月出图额度、是否能用更快的模式、商用授权范围。轻度尝试选最低档就够，做商业项目要看清授权条款，尤其是涉及品牌方投放时的使用范围。</p>
+<p>额度按“任务”消耗，放大、变体、局部重绘都算。做一套视觉稿之前先估算张数，避免做到一半额度见底。</p>
+<p>另外，免费试用通常只能看不能商用，正式接活前把账号升级。</p>
+<h2>它的局限</h2>
+<ul>
+  <li><strong>文字排版不行。</strong>海报上的中文标题、logo 字，基本都要后期加。</li>
+  <li><strong>精确控制难。</strong>“左手拿杯子、右手扶栏杆”这类精确姿态，靠提示词很难一次到位。</li>
+  <li><strong>人物一致性弱。</strong>同一角色多张图容易变脸，需要参考图配合。</li>
+  <li><strong>英文更稳。</strong>中文提示词能识别，但细节控制不如英文精确。</li>
+</ul>
+<h2>和另外两款出图工具的差别</h2>
+<div class="table-wrap">
+<table class="cmp">
+  <thead><tr><th>维度</th><th>Midjourney</th><th>即梦 AI</th><th>Stable Diffusion</th></tr></thead>
+  <tbody>
+    <tr><td>默认美感</td><td>强，风格统一</td><td>中等，偏实用</td><td>取决于模型与调参</td></tr>
+    <tr><td>中文提示词</td><td>可用但不精确</td><td>原生支持，理解好</td><td>需借助插件</td></tr>
+    <tr><td>可控性</td><td>中等</td><td>中等</td><td>最高，可训练专属模型</td></tr>
+    <tr><td>上手成本</td><td>低</td><td>最低</td><td>高，需本地环境</td></tr>
+    <tr><td>图生视频</td><td>不支持</td><td>支持</td><td>需另配工具</td></tr>
+  </tbody>
+</table>
+</div>
+
+      <h2>Midjourney 常见问题</h2><div class="faq"><details><summary>Midjourney 有免费版吗？</summary><p class="answer">新账号通常有少量试用额度，主要用于体验，商用需要订阅。具体额度以官网当前说明为准。</p></details><details><summary>生成的图能商用吗？</summary><p class="answer">付费订阅用户在多数情况下拥有商业使用权，但涉及品牌、名人、特定 IP 的画面另有约束。正式投放前读一遍官方授权条款。</p></details><details><summary>必须用英文提示词吗？</summary><p class="answer">不是必须，但英文对细节的控制更精确。中文描述可以先写清楚，再按“主体 + 光线 + 镜头 + 风格”的结构翻成短句。</p></details><details><summary>为什么同样的提示词，两次结果差很多？</summary><p class="answer">生成带随机性。把 --seed 固定下来，再逐条改提示词，才能判断是哪句话在起作用。</p></details><details><summary>能做中文海报吗？</summary><p class="answer">画面可以，文字不行。中文标题、价格、二维码这类元素，导出后用设计软件加，效果才干净。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/jimeng.html" data-cat="ai-media" data-k="即梦 AI 字节跳动 · 图像与视频 中文提示词直接可用，文生图、图生视频一条链，适合做短视频素材。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◮</div>
+    <div>
+      <div class="card-name">即梦 AI</div>
+      <div class="card-sub">字节跳动 · 图像与视频</div>
+    </div>
+  </div>
+  <p class="card-desc">中文提示词直接可用，文生图、图生视频一条链，适合做短视频素材。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/runway.html" data-cat="ai-media" data-k="Runway Runway · AI 视频 文生视频、图生视频加一整套后期工具，抠像、扩图、擦除都能在站内完成。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◫</div>
+    <div>
+      <div class="card-name">Runway</div>
+      <div class="card-sub">Runway · AI 视频</div>
+    </div>
+  </div>
+  <p class="card-desc">文生视频、图生视频加一整套后期工具，抠像、扩图、擦除都能在站内完成。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/suno.html" data-cat="ai-media" data-k="Suno Suno · AI 音乐 给一段风格描述和几句歌词，几分钟出一首带人声的完整歌。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◬</div>
+    <div>
+      <div class="card-name">Suno</div>
+      <div class="card-sub">Suno · AI 音乐</div>
+    </div>
+  </div>
+  <p class="card-desc">给一段风格描述和几句歌词，几分钟出一首带人声的完整歌。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

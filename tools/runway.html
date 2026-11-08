@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Runway 官网入口：文生视频、图生视频与视频后期用法 | 拾光导航</title>
+<meta name="description" content="Runway 提供文生视频、图生视频和视频编辑工具。本文说明生成流程、镜头控制方法、额度消耗与商用注意点。">
+<meta name="keywords" content="Runway,Runway官网,AI视频生成,图生视频,视频编辑">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/runway.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="Runway 官网入口：文生视频、图生视频与视频后期用法 | 拾光导航">
+<meta property="og:description" content="Runway 提供文生视频、图生视频和视频编辑工具。本文说明生成流程、镜头控制方法、额度消耗与商用注意点。">
+<meta property="og:url" content="https://www.appsnav.com/tools/runway.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Runway 有免费额度吗？", "acceptedAnswer": {"@type": "Answer", "text": "新账号有少量一次性额度，够跑几段短片测试。持续使用需要订阅。"}}, {"@type": "Question", "name": "生成视频最长多久？", "acceptedAnswer": {"@type": "Answer", "text": "单次生成有时长上限，随套餐和模型变化。做长片靠分段生成再拼接。"}}, {"@type": "Question", "name": "中文提示词能用吗？", "acceptedAnswer": {"@type": "Answer", "text": "能识别，但英文控制更精确。建议用英文写主体与镜头，中文只做备注。"}}, {"@type": "Question", "name": "生成的视频能商用吗？", "acceptedAnswer": {"@type": "Answer", "text": "付费套餐一般授予商业使用权，具体范围以条款为准。涉及真人肖像、品牌素材的另有约束。"}}, {"@type": "Question", "name": "和即梦 AI 比怎么样？", "acceptedAnswer": {"@type": "Answer", "text": "Runway 的后期工具更全、镜头控制更细，适合专业流程；即梦中文友好、成本低，适合短视频日更。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "AI 绘画与影音", "item": "https://www.appsnav.com/category/ai-media.html"}, {"@type": "ListItem", "position": 3, "name": "Runway", "item": "https://www.appsnav.com/tools/runway.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link active" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/ai-media.html">AI 绘画与影音</a><i>/</i><span>Runway</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">◫</div>
+      <div>
+        <h1>Runway 官网入口与使用指南</h1>
+        <p class="head-lead">它不是只做生成，抠像、擦除、扩图这些后期活也在同一个工作台里。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>AI 绘画与影音</b></span><span class="meta-chip">形态 <b>网页端</b></span><span class="meta-chip">收费 <b>订阅制，按额度消耗</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://runwayml.com" target="_blank" rel="noopener nofollow">打开 Runway 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">Runway</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页端</div></div><div class="fact"><div class="k">能力范围</div><div class="v">视频生成 + 视频编辑工具集</div></div><div class="fact"><div class="k">收费方式</div><div class="v">订阅制，按额度消耗</div></div><div class="fact"><div class="k">界面语言</div><div class="v">英文为主</div></div></div>
+      <h2>它的位置：生成加后期</h2>
+<p>多数 AI 视频工具只负责“生成一段”，剩下的剪辑、抠像、补画面还得换软件。Runway 把这几步放进同一个工作台：生成一段镜头，不满意就用工具修，修完直接导出。</p>
+<p>这对做广告片、产品演示、短片概念的人很实用——试错的成本被压低了。对只想做一条口播视频的人，功能就显得过剩。</p>
+<p>它的工具集里，有几项被低估：绿幕抠像、物体擦除、画面扩展。这三件事在传统流程里要么花钱，要么花时间。</p>
+<h2>视频生成的三种入口</h2>
+<div class="feats">
+  <div class="feat"><p class="feat-name">文生视频</p><p>写清主体、动作、镜头、光线，直接生成片段。适合没有素材时的概念片。</p></div>
+  <div class="feat"><p class="feat-name">图生视频</p><p>给一张商品图或场景图，让画面动起来。电商展示最常用。</p></div>
+  <div class="feat"><p class="feat-name">视频转视频</p><p>保留原片运动结构，换风格或换主体。适合做风格化版本。</p></div>
+  <div class="feat"><p class="feat-name">镜头控制</p><p>可以指定推拉摇移和运动幅度，比纯文字描述稳。</p></div>
+  <div class="feat"><p class="feat-name">关键帧</p><p>给首帧和尾帧，中间由模型补，转场和变身效果常用这个做法。</p></div>
+  <div class="feat"><p class="feat-name">延长与拼接</p><p>单段时长有限，靠延长和拼接做长镜头，注意衔接处的一致性。</p></div>
+</div>
+<h2>写视频提示词，和写图片提示词不一样</h2>
+<p>图片是静止的，视频多了时间维度。提示词里必须回答“这几秒内发生了什么”。</p>
+<ol>
+  <li><strong>一句一个动作。</strong>“镜头缓慢推进，人物转头看向窗外，窗帘被风吹起”，三个动作，按顺序发生。</li>
+  <li><strong>指定镜头运动。</strong>推进、后退、横移、环绕，只选一个。两个叠加容易乱。</li>
+  <li><strong>描述光线变化。</strong>“光线从窗边移到桌面”会给画面节奏，比静态光更有电影感。</li>
+  <li><strong>控制人物数量。</strong>两个人以上的互动，动作容易粘连，尽量用单人镜头。</li>
+</ol>
+<blockquote>四秒能讲清一个动作，八秒能讲清一个小场景，十五秒以上就该考虑分镜了。</blockquote>
+<h2>额度消耗与成本估算</h2>
+<p>按秒计费，生成、放大、延长都消耗额度。不同档位的额度和并发数不同，团队协作需要更高档位。</p>
+<p>做一条三十秒的成片，实际会生成几倍长度的素材用来挑选，预算按成片时长的三到五倍估比较稳妥。前期测试用小额、短时长，方向定了再批量出。</p>
+<p>视频渲染耗时较长，赶工期的话预留排队时间，别把出片压在最后一小时。</p>
+<h2>视频编辑工具清单</h2>
+<ul>
+  <li><strong>抠像：</strong>去掉背景，换成纯色或另一段画面，边缘处理比传统键控省事。</li>
+  <li><strong>物体擦除：</strong>去掉画面里的路人、电线、logo，适合补拍成本高的场景。</li>
+  <li><strong>画面扩展：</strong>把竖版素材扩成横版，或补出画框外的环境，适配多平台投放。</li>
+  <li><strong>运动追踪：</strong>给画面元素加跟随效果，做局部动效。</li>
+  <li><strong>超分与补帧：</strong>提升清晰度和流畅度，老素材翻新常用。</li>
+</ul>
+<p>这些工具单独拿出来都不算颠覆，但组合在一个界面里，改片子的往返次数会少很多。</p>
+<h2>现实中的限制</h2>
+<p>人物面部和手部仍是弱项，特写镜头容易出问题，尽量用中远景、背影、遮挡来规避。文字生成不可靠，片中的字幕、价格、logo 都要后期加。</p>
+<p>单段时长短，长镜头依赖拼接，衔接处的光线和运动要手动对齐。英文界面和英文提示词更稳，中文描述需要转一层。</p>
+<p>价格在同类里偏高，适合有明确产出需求的团队，个人玩玩成本不低。</p>
+
+      <h2>Runway 常见问题</h2><div class="faq"><details><summary>Runway 有免费额度吗？</summary><p class="answer">新账号有少量一次性额度，够跑几段短片测试。持续使用需要订阅。</p></details><details><summary>生成视频最长多久？</summary><p class="answer">单次生成有时长上限，随套餐和模型变化。做长片靠分段生成再拼接。</p></details><details><summary>中文提示词能用吗？</summary><p class="answer">能识别，但英文控制更精确。建议用英文写主体与镜头，中文只做备注。</p></details><details><summary>生成的视频能商用吗？</summary><p class="answer">付费套餐一般授予商业使用权，具体范围以条款为准。涉及真人肖像、品牌素材的另有约束。</p></details><details><summary>和即梦 AI 比怎么样？</summary><p class="answer">Runway 的后期工具更全、镜头控制更细，适合专业流程；即梦中文友好、成本低，适合短视频日更。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/jimeng.html" data-cat="ai-media" data-k="即梦 AI 字节跳动 · 图像与视频 中文提示词直接可用，文生图、图生视频一条链，适合做短视频素材。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◮</div>
+    <div>
+      <div class="card-name">即梦 AI</div>
+      <div class="card-sub">字节跳动 · 图像与视频</div>
+    </div>
+  </div>
+  <p class="card-desc">中文提示词直接可用，文生图、图生视频一条链，适合做短视频素材。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/midjourney.html" data-cat="ai-media" data-k="Midjourney Midjourney · 图像生成 出图自带一套审美倾向，光影和质感稳，适合海报、插画与概念图。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◭</div>
+    <div>
+      <div class="card-name">Midjourney</div>
+      <div class="card-sub">Midjourney · 图像生成</div>
+    </div>
+  </div>
+  <p class="card-desc">出图自带一套审美倾向，光影和质感稳，适合海报、插画与概念图。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/suno.html" data-cat="ai-media" data-k="Suno Suno · AI 音乐 给一段风格描述和几句歌词，几分钟出一首带人声的完整歌。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◬</div>
+    <div>
+      <div class="card-name">Suno</div>
+      <div class="card-sub">Suno · AI 音乐</div>
+    </div>
+  </div>
+  <p class="card-desc">给一段风格描述和几句歌词，几分钟出一首带人声的完整歌。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

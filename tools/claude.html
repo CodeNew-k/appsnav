@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claude 官网入口：长文写作、代码重构与文档分析用法 | 拾光导航</title>
+<meta name="description" content="Claude 以长文写作和代码理解见长。本文整理它的实际强项、Artifacts 与 Projects 的用法、访问门槛和常见问题。">
+<meta name="keywords" content="Claude,Claude官网,AI写作,AI代码助手,Anthropic">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/claude.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="Claude 官网入口：长文写作、代码重构与文档分析用法 | 拾光导航">
+<meta property="og:description" content="Claude 以长文写作和代码理解见长。本文整理它的实际强项、Artifacts 与 Projects 的用法、访问门槛和常见问题。">
+<meta property="og:url" content="https://www.appsnav.com/tools/claude.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Claude 在国内能用吗？", "acceptedAnswer": {"@type": "Answer", "text": "无法直连，需要自备网络条件，注册环节通常还涉及海外手机号或支付方式。使用前先把这两件事解决。"}}, {"@type": "Question", "name": "它比 ChatGPT 强在哪？", "acceptedAnswer": {"@type": "Answer", "text": "长文的结构和语感更稳，代码重构时对多文件上下文的理解更细。快问快答和生态插件不如对方。"}}, {"@type": "Question", "name": "Artifacts 是什么？", "acceptedAnswer": {"@type": "Answer", "text": "它把生成的网页、图表、交互组件直接渲染成可预览的成品，适合边改边看。做前端原型时很省事。"}}, {"@type": "Question", "name": "中文写作质量如何？", "acceptedAnswer": {"@type": "Answer", "text": "长文中文表达自然，少见翻译腔；但本地化表达、行业惯用语不如国内模型贴切，正式中文稿仍要自己过一遍。"}}, {"@type": "Question", "name": "免费额度有吗？", "acceptedAnswer": {"@type": "Answer", "text": "有，额度较小，适合试用。长文写作和频繁使用基本需要订阅。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "AI 对话与写作", "item": "https://www.appsnav.com/category/ai-chat.html"}, {"@type": "ListItem", "position": 3, "name": "Claude", "item": "https://www.appsnav.com/tools/claude.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link active" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/ai-chat.html">AI 对话与写作</a><i>/</i><span>Claude</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">◒</div>
+      <div>
+        <h1>Claude 官网入口与使用指南</h1>
+        <p class="head-lead">长文写作和代码重构这两件事，它的输出节奏更接近专业作者。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>AI 对话与写作</b></span><span class="meta-chip">形态 <b>网页 / 桌面端 / API</b></span><span class="meta-chip">收费 <b>订阅制 + API 计费</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://claude.ai" target="_blank" rel="noopener nofollow">打开 Claude 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">Anthropic</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页 / 桌面端 / API</div></div><div class="fact"><div class="k">中文能力</div><div class="v">支持，长文中文表达自然</div></div><div class="fact"><div class="k">收费方式</div><div class="v">订阅制 + API 计费</div></div><div class="fact"><div class="k">境内访问</div><div class="v">无法直连</div></div></div>
+      <h2>它擅长的工作形态</h2>
+<p>Claude 的输出有一种共同特征：句子之间接得顺，段落有推进感，很少出现那种“首先、其次、最后”的模板骨架。写长文时，这个差别很直观——同样的提纲，它给的稿子读起来更像人写的。</p>
+<p>代码方面，它对项目上下文的理解比较细。把几个相关文件一起贴进去，让它改一个函数，它会顺着调用关系调整，而不是只改你指的那一行。</p>
+<p>它不太擅长的是“快问快答”。问一句答一句的闲聊，用它有点浪费；给它一个需要思考两分钟的任务，才划算。</p>
+<h2>三项值得专门学的功能</h2>
+<div class="feats">
+  <div class="feat"><p class="feat-name">Artifacts 预览</p><p>生成的网页、图表、组件会直接渲染出来，改一版看一眼，不用来回复制到本地。</p></div>
+  <div class="feat"><p class="feat-name">Projects 常驻上下文</p><p>把项目背景、规范、参考资料固定在一个空间里，后续对话不用反复交代。</p></div>
+  <div class="feat"><p class="feat-name">文件与图片读取</p><p>PDF、表格、截图都能读，适合先让它过一遍材料再动笔。</p></div>
+  <div class="feat"><p class="feat-name">长文分段续写</p><p>按章节推进，前后设定不容易丢，写方案、写书稿时省心。</p></div>
+  <div class="feat"><p class="feat-name">代码审查</p><p>让它挑毛病比让它写新代码更有价值，能指出边界条件遗漏。</p></div>
+  <div class="feat"><p class="feat-name">语气控制</p><p>可以通过示例段落锁定文风，改稿时风格漂移少。</p></div>
+</div>
+<h2>写长文的具体做法</h2>
+<p>不要一次要求“写一篇三千字的文章”，它会给一个平均水准的骨架。更有效的做法是分三段走：</p>
+<ol>
+  <li><strong>先对齐结构。</strong>给出读者是谁、要解决什么疑问、希望读完后做什么，让它先出一版提纲，你改到满意为止。</li>
+  <li><strong>逐节写。</strong>每次只写一节，附上上一节的结尾作为衔接，文章的气口会连得上。</li>
+  <li><strong>最后统一语气。</strong>把全文贴回去，要求“统一人称、删掉重复的过渡句、把长句拆短”，比边写边改效率高。</li>
+</ol>
+<blockquote>给它两段你自己写过的文字当范例，比写十条风格要求都管用。</blockquote>
+<h2>使用门槛与现实问题</h2>
+<p>境内无法直接访问，需要自备网络条件，这一点和 ChatGPT 类似。注册通常需要海外手机号或特定支付方式，具体以官网当前流程为准。</p>
+<p>订阅按档位区分用量和功能，重度使用还可能碰到每日额度上限。API 适合接进自己的系统，计费按输入输出 token 分别计算。</p>
+<p>中文输出整体不错，但涉及国内政策、行业黑话、本地化表达时，仍不如本土模型贴地。中英混排的技术文档，它处理得很稳。</p>
+<h2>三款写作型工具怎么分</h2>
+<div class="table-wrap">
+<table class="cmp">
+  <thead><tr><th>需求</th><th>Claude</th><th>ChatGPT</th><th>通义千问</th></tr></thead>
+  <tbody>
+    <tr><td>长篇结构化写作</td><td>最顺，章节衔接自然</td><td>强，需多次调整语气</td><td>中等，偏公文体</td></tr>
+    <tr><td>代码理解与重构</td><td>上下文把握细</td><td>生态覆盖广</td><td>常规片段够用</td></tr>
+    <tr><td>中文办公文档</td><td>一般</td><td>可用</td><td>与文档工具衔接好</td></tr>
+    <tr><td>境内直接访问</td><td>不支持</td><td>不支持</td><td>支持</td></tr>
+  </tbody>
+</table>
+</div>
+
+      <h2>Claude 常见问题</h2><div class="faq"><details><summary>Claude 在国内能用吗？</summary><p class="answer">无法直连，需要自备网络条件，注册环节通常还涉及海外手机号或支付方式。使用前先把这两件事解决。</p></details><details><summary>它比 ChatGPT 强在哪？</summary><p class="answer">长文的结构和语感更稳，代码重构时对多文件上下文的理解更细。快问快答和生态插件不如对方。</p></details><details><summary>Artifacts 是什么？</summary><p class="answer">它把生成的网页、图表、交互组件直接渲染成可预览的成品，适合边改边看。做前端原型时很省事。</p></details><details><summary>中文写作质量如何？</summary><p class="answer">长文中文表达自然，少见翻译腔；但本地化表达、行业惯用语不如国内模型贴切，正式中文稿仍要自己过一遍。</p></details><details><summary>免费额度有吗？</summary><p class="answer">有，额度较小，适合试用。长文写作和频繁使用基本需要订阅。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/chatgpt.html" data-cat="ai-chat" data-k="ChatGPT OpenAI · 通用对话 把口语化的想法整理成能交付的成稿，写作、代码、资料分析都能接。 AI 对话与写作">
+  <div class="card-top">
+    <div class="card-icon">◍</div>
+    <div>
+      <div class="card-name">ChatGPT</div>
+      <div class="card-sub">OpenAI · 通用对话</div>
+    </div>
+  </div>
+  <p class="card-desc">把口语化的想法整理成能交付的成稿，写作、代码、资料分析都能接。</p>
+  <div class="card-foot"><span>AI 对话与写作</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/deepseek.html" data-cat="ai-chat" data-k="DeepSeek 深度求索 · 推理与开源 会先把思路摊开再给答案，数学、代码和需要多步推理的问题表现突出。 AI 对话与写作">
+  <div class="card-top">
+    <div class="card-icon">◈</div>
+    <div>
+      <div class="card-name">DeepSeek</div>
+      <div class="card-sub">深度求索 · 推理与开源</div>
+    </div>
+  </div>
+  <p class="card-desc">会先把思路摊开再给答案，数学、代码和需要多步推理的问题表现突出。</p>
+  <div class="card-foot"><span>AI 对话与写作</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/tongyi.html" data-cat="ai-chat" data-k="通义千问 阿里云 · 中文办公 和文档、表格、会议记录结合得顺，中文办公场景开箱可用，境内直连。 AI 对话与写作">
+  <div class="card-top">
+    <div class="card-icon">◔</div>
+    <div>
+      <div class="card-name">通义千问</div>
+      <div class="card-sub">阿里云 · 中文办公</div>
+    </div>
+  </div>
+  <p class="card-desc">和文档、表格、会议记录结合得顺，中文办公场景开箱可用，境内直连。</p>
+  <div class="card-foot"><span>AI 对话与写作</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Notion 官网入口：笔记、数据库与团队协作上手方法 | 拾光导航</title>
+<meta name="description" content="Notion 把笔记、表格、看板和文档放在同一套结构里。本文说明它的核心用法、模板思路、协作方式与国内使用体验。">
+<meta name="keywords" content="Notion,Notion官网,在线笔记,团队协作,知识库工具">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/notion.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="Notion 官网入口：笔记、数据库与团队协作上手方法 | 拾光导航">
+<meta property="og:description" content="Notion 把笔记、表格、看板和文档放在同一套结构里。本文说明它的核心用法、模板思路、协作方式与国内使用体验。">
+<meta property="og:url" content="https://www.appsnav.com/tools/notion.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Notion 免费吗？", "acceptedAnswer": {"@type": "Answer", "text": "个人使用免费，页面数量和块数有限制；团队协作与高级权限需要按人数订阅。"}}, {"@type": "Question", "name": "国内访问稳定吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以访问，但加载和同步速度一般，大页面等待时间明显。对实时性要求高的团队要提前试用。"}}, {"@type": "Question", "name": "和飞书文档比怎么样？", "acceptedAnswer": {"@type": "Answer", "text": "Notion 的结构自由度和数据库能力更强，飞书在即时协作、审批和本地化生态上更顺。按团队习惯选。"}}, {"@type": "Question", "name": "能导出数据吗？", "acceptedAnswer": {"@type": "Answer", "text": "支持导出为 Markdown、CSV、PDF 等格式，但数据库关系和页面嵌套在导出后会损失一部分结构，迁移前先小范围测试。"}}, {"@type": "Question", "name": "适合做项目管理吗？", "acceptedAnswer": {"@type": "Answer", "text": "小团队够用，看板和表格视图能覆盖基本流程。复杂依赖、资源排期还是专业工具更合适。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "效率与工具", "item": "https://www.appsnav.com/category/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Notion", "item": "https://www.appsnav.com/tools/notion.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link active" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/tools.html">效率与工具</a><i>/</i><span>Notion</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">▨</div>
+      <div>
+        <h1>Notion 官网入口与使用指南</h1>
+        <p class="head-lead">它的门槛不在操作，而在“先想清楚结构再动手”。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>效率与工具</b></span><span class="meta-chip">形态 <b>网页 / 桌面 / 移动端</b></span><span class="meta-chip">收费 <b>个人免费 + 团队订阅</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.notion.so" target="_blank" rel="noopener nofollow">打开 Notion 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">Notion Labs</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页 / 桌面 / 移动端</div></div><div class="fact"><div class="k">核心结构</div><div class="v">页面、块、数据库</div></div><div class="fact"><div class="k">收费方式</div><div class="v">个人免费 + 团队订阅</div></div><div class="fact"><div class="k">境内体验</div><div class="v">可访问，同步速度一般</div></div></div>
+      <h2>它到底是什么</h2>
+<p>说它是笔记软件不准确，说它是项目管理工具也不准确。它的底层只有两个概念：页面和块。页面里可以放文字、图片、表格、看板、日历，这些内容都是块；页面又能互相嵌套，形成层级。</p>
+<p>这套结构的威力在于“一套内容多种视图”。同一批任务，可以在表格里看字段、在看板里看状态、在日历里看排期，数据只有一份。</p>
+<p>代价是自由度高，容易一开始就搭得过于复杂。多数人第一次用，会在半小时内做出一个自己都不想再打开的页面。</p>
+<h2>新手最该先做的三件事</h2>
+<ol>
+  <li><strong>只建一个页面。</strong>把你现在最乱的那件事放进去——待办、读书笔记、客户记录，选一个。别一上来就搭整个团队的知识库。</li>
+  <li><strong>用数据库管“会变的东西”。</strong>任务、文章、客户、合同这类有状态、有日期、要筛选的内容，用数据库；说明文档、规范、会议纪要这类读完就定型的内容，用普通页面。</li>
+  <li><strong>字段别超过五个。</strong>标题、状态、日期、负责人、备注，这五个能覆盖大多数场景。字段一多，录入就变成负担。</li>
+</ol>
+<blockquote>判断标准：如果你每次打开都要想“这条该记在哪”，说明结构太复杂了，砍掉一半。</blockquote>
+<h2>数据库视图的四种常用玩法</h2>
+<div class="feats">
+  <div class="feat"><p class="feat-name">表格视图</p><p>批量录入和筛选，最接近 Excel 的使用习惯，适合做台账。</p></div>
+  <div class="feat"><p class="feat-name">看板视图</p><p>按状态分列，拖动即改状态，适合任务流和内容排期。</p></div>
+  <div class="feat"><p class="feat-name">日历视图</p><p>按日期铺开，看冲突和空档，适合排期和内容日历。</p></div>
+  <div class="feat"><p class="feat-name">画廊视图</p><p>卡片形式展示封面，做素材库、书单、作品集时视觉更清楚。</p></div>
+</div>
+<p>同一份数据切换视图，不用复制粘贴，这是它区别于普通表格软件的核心。</p>
+<h2>协作与权限</h2>
+<p>团队使用时，页面可以逐层设置权限：谁能编辑、谁只能评论、谁只能看。对外分享可以生成公开链接，也可以限制为指定邮箱访问。</p>
+<p>评论、提及、通知都放在页面上下文里，讨论不会散落到聊天工具。这是它比“文档 + 群聊”组合更顺的地方。</p>
+<p>但权限颗粒度不算细，大型组织需要配合团队空间和组管理，别把敏感内容放在公开页面。</p>
+<h2>国内使用的真实体验</h2>
+<p>可以正常访问，但同步速度和加载稳定性不如国内产品，大页面、多图片的加载等待明显。团队协作时，这个延迟会被放大。</p>
+<p>移动端体验一般，快速记录不如专门的笔记 App 顺手。它更适合在电脑上做整理和规划。</p>
+<p>中文搜索对分词的支持有限，标题和字段名起得规范一点，检索会准很多。</p>
+<h2>什么团队适合，什么团队不适合</h2>
+<div class="two-col">
+  <div class="col-box good">
+    <div class="box-title">适合</div>
+    <ul>
+      <li>内容团队做选题库、素材库</li>
+      <li>小团队做项目台账和会议记录</li>
+      <li>个人做长期知识整理</li>
+      <li>需要一套内容多视图查看的场景</li>
+    </ul>
+  </div>
+  <div class="col-box bad">
+    <div class="box-title">不适合</div>
+    <ul>
+      <li>需要严格权限与审计的大型组织</li>
+      <li>强实时协作、多人同时编辑长文</li>
+      <li>大量结构化数据的统计计算</li>
+      <li>完全离线、内网隔离的环境</li>
+    </ul>
+  </div>
+</div>
+
+      <h2>Notion 常见问题</h2><div class="faq"><details><summary>Notion 免费吗？</summary><p class="answer">个人使用免费，页面数量和块数有限制；团队协作与高级权限需要按人数订阅。</p></details><details><summary>国内访问稳定吗？</summary><p class="answer">可以访问，但加载和同步速度一般，大页面等待时间明显。对实时性要求高的团队要提前试用。</p></details><details><summary>和飞书文档比怎么样？</summary><p class="answer">Notion 的结构自由度和数据库能力更强，飞书在即时协作、审批和本地化生态上更顺。按团队习惯选。</p></details><details><summary>能导出数据吗？</summary><p class="answer">支持导出为 Markdown、CSV、PDF 等格式，但数据库关系和页面嵌套在导出后会损失一部分结构，迁移前先小范围测试。</p></details><details><summary>适合做项目管理吗？</summary><p class="answer">小团队够用，看板和表格视图能覆盖基本流程。复杂依赖、资源排期还是专业工具更合适。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/excalidraw.html" data-cat="tools" data-k="Excalidraw Excalidraw · 手绘白板 手绘风格的在线白板，打开就能画，适合画流程、画架构、讲思路。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▩</div>
+    <div>
+      <div class="card-name">Excalidraw</div>
+      <div class="card-sub">Excalidraw · 手绘白板</div>
+    </div>
+  </div>
+  <p class="card-desc">手绘风格的在线白板，打开就能画，适合画流程、画架构、讲思路。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/ilovepdf.html" data-cat="tools" data-k="iLovePDF iLovePDF · PDF 工具箱 合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▦</div>
+    <div>
+      <div class="card-name">iLovePDF</div>
+      <div class="card-sub">iLovePDF · PDF 工具箱</div>
+    </div>
+  </div>
+  <p class="card-desc">合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/tinypng.html" data-cat="tools" data-k="TinyPNG TinyPNG · 图片压缩 把 PNG、JPEG 压到原来的一半以下，肉眼几乎看不出差别。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▧</div>
+    <div>
+      <div class="card-name">TinyPNG</div>
+      <div class="card-sub">TinyPNG · 图片压缩</div>
+    </div>
+  </div>
+  <p class="card-desc">把 PNG、JPEG 压到原来的一半以下，肉眼几乎看不出差别。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

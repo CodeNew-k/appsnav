@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Remove.bg 官网入口：自动抠图、批量处理与 API 用法 | 拾光导航</title>
+<meta name="description" content="Remove.bg 提供一键去背景服务，支持人像、商品与动物图片。本文说明免费额度、边缘质量、批量与 API 接入方式。">
+<meta name="keywords" content="Remove.bg,自动抠图,去背景,透明背景PNG,图片处理">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.appsnav.com/tools/removebg.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="拾光导航">
+<meta property="og:title" content="Remove.bg 官网入口：自动抠图、批量处理与 API 用法 | 拾光导航">
+<meta property="og:description" content="Remove.bg 提供一键去背景服务，支持人像、商品与动物图片。本文说明免费额度、边缘质量、批量与 API 接入方式。">
+<meta property="og:url" content="https://www.appsnav.com/tools/removebg.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e6b56">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Remove.bg 免费吗？", "acceptedAnswer": {"@type": "Answer", "text": "免费可以预览低分辨率结果，下载高清图需要额度。批量与 API 按量付费。"}}, {"@type": "Question", "name": "抠出来的图有白边吗？", "acceptedAnswer": {"@type": "Answer", "text": "多数情况没有，算法会处理半透明边缘。深色底换浅色底时仍建议放大检查发丝部分。"}}, {"@type": "Question", "name": "支持批量处理吗？", "acceptedAnswer": {"@type": "Answer", "text": "网页版单张为主，付费套餐支持批量上传，大批量建议用 API 接入自己的流程。"}}, {"@type": "Question", "name": "能处理透明物体吗？", "acceptedAnswer": {"@type": "Answer", "text": "玻璃、纱质、水花这类半透明主体识别困难，结果常需要手动修补。"}}, {"@type": "Question", "name": "上传的图片会被保存吗？", "acceptedAnswer": {"@type": "Answer", "text": "会经过服务器处理，可在账号中删除记录。未公开的产品图与人物照片，上传前先确认授权。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.appsnav.com/index.html"}, {"@type": "ListItem", "position": 2, "name": "效率与工具", "item": "https://www.appsnav.com/category/tools.html"}, {"@type": "ListItem", "position": 3, "name": "Remove.bg", "item": "https://www.appsnav.com/tools/removebg.html"}]}</script>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+    <form class="search" action="../index.html" method="get" role="search">
+      <input type="search" name="q" value="" placeholder="搜索工具、场景或关键词" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="../index.html#all">全部工具</a>
+      <a href="../submit.html">提交收录</a>
+      <a href="../about.html">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="shell">
+<aside class="side">
+  <div class="side-card">
+    <div class="side-title">按用途浏览</div>
+    <div class="side-list"><a class="side-link" href="../index.html"><span>◉</span>全部工具<span class="side-count">21</span></a><a class="side-link" href="../category/ai-chat.html"><span>◆</span>AI 对话与写作<span class="side-count">6</span></a><a class="side-link" href="../category/ai-media.html"><span>◇</span>AI 绘画与影音<span class="side-count">6</span></a><a class="side-link" href="../category/game.html"><span>▣</span>游戏与娱乐<span class="side-count">3</span></a><a class="side-link active" href="../category/tools.html"><span>▤</span>效率与工具<span class="side-count">6</span></a></div>
+    <div class="side-bottom">
+      <a class="side-link" href="../submit.html">提交收录</a>
+      <a class="side-link" href="../about.html">关于本站</a>
+    </div>
+  </div>
+  <div class="side-note">
+    <b>编辑说明</b>
+    条目由人工试用后整理，链接一律指向原站。页面里标注的收费与访问情况会随时间变化，以官网当前说明为准。
+  </div>
+</aside><main>
+  <nav class="crumb" aria-label="面包屑"><a href="../index.html">首页</a><i>/</i><a href="../category/tools.html">效率与工具</a><i>/</i><span>Remove.bg</span></nav>
+
+  <div class="head-card">
+    <div class="head-top">
+      <div class="icon-lg">◲</div>
+      <div>
+        <h1>Remove.bg 官网入口与使用指南</h1>
+        <p class="head-lead">五秒去掉背景，剩下的时间花在检查边缘上。</p>
+      </div>
+    </div>
+    <div class="meta-chips"><span class="meta-chip">分类 <b>效率与工具</b></span><span class="meta-chip">形态 <b>网页 / 桌面 / 插件 / API</b></span><span class="meta-chip">收费 <b>免费预览 + 按额度付费</b></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.remove.bg/zh" target="_blank" rel="noopener nofollow">打开 Remove.bg 官网 ↗</a>
+      <a class="btn btn-ghost" href="#guide">看使用说明</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="prose">
+      <h2 id="guide">先看资料，判断要不要往下读</h2>
+      <div class="facts"><div class="fact"><div class="k">开发方</div><div class="v">Kaleido</div></div><div class="fact"><div class="k">使用形态</div><div class="v">网页 / 桌面 / 插件 / API</div></div><div class="fact"><div class="k">输出格式</div><div class="v">透明 PNG、JPG</div></div><div class="fact"><div class="k">收费方式</div><div class="v">免费预览 + 按额度付费</div></div><div class="fact"><div class="k">处理速度</div><div class="v">单张数秒</div></div></div>
+      <h2>它抠的是什么</h2>
+<p>自动识别主体与背景的边界，把背景变成透明。对人像、商品、宠物这类主体明确的图片，准确率相当高；对复杂边缘——头发、毛绒、纱质、玻璃——处理得比多数手动工具细。</p>
+<p>它的算法不只是“识别轮廓”，还会估算半透明区域的 alpha 值，所以发丝边缘不会出现生硬的白边。这一点在深色背景换浅色背景时特别明显。</p>
+<p>反过来说，主体不清晰、背景与主体颜色接近、画面有大面积反光时，结果会明显变差。</p>
+<h2>正确用法：先处理，再检查，再导出</h2>
+<ol>
+  <li><strong>用分辨率足够的原图。</strong>压缩过度的图，边缘信息已经丢了，抠出来必然毛糙。</li>
+  <li><strong>上传后先看预览。</strong>免费预览是低分辨率，用来判断边缘质量够不够，不要直接拿去用。</li>
+  <li><strong>用擦除/还原工具修局部。</strong>多抠进来的背景、被误删的主体部分，手动补两笔比重新上传快。</li>
+  <li><strong>导出高清 PNG。</strong>需要付费额度。透明通道保留，放到新背景上不会有白边。</li>
+  <li><strong>换背景后再检查一次。</strong>在浅色和深色底上各看一遍，边缘问题会立刻暴露。</li>
+</ol>
+<h2>哪些图它搞不定</h2>
+<div class="two-col">
+  <div class="col-box good">
+    <div class="box-title">效果通常很好</div>
+    <ul>
+      <li>单人半身像、证件照</li>
+      <li>白底商品图</li>
+      <li>宠物、毛发清晰的动物</li>
+      <li>轮廓分明的物体</li>
+    </ul>
+  </div>
+  <div class="col-box bad">
+    <div class="box-title">容易翻车</div>
+    <ul>
+      <li>透明材质、玻璃杯、纱裙</li>
+      <li>主体与背景颜色接近</li>
+      <li>多人重叠、肢体交叠</li>
+      <li>运动模糊、逆光剪影</li>
+    </ul>
+  </div>
+</div>
+<h2>批量与接口</h2>
+<p>网页版单张处理，适合零散需求。批量上传需要付费套餐，一次几十张，常用于电商上新。</p>
+<p>API 按张计费，返回透明 PNG。接进上架流程后，运营不用逐张手动处理。注意设置并发上限和失败重试，别把接口打成瓶颈。</p>
+<p>也有 PS、Figma 的插件版本，设计流程里直接调用，省掉导出再导入。</p>
+<h2>隐私与版权</h2>
+<p>上传的图片会经过其服务器处理，免费预览通常以较低分辨率返回。涉及未公开的产品图、人物肖像，先确认是否有权处理与公开。</p>
+<p>抠图本身不产生新的著作权，但把他人图片去背后用于商业宣传，仍可能侵犯原图权利。商用素材的来源要干净。</p>
+<p>处理完可以在账号里删除历史图片，减少留存。</p>
+<h2>同类方案对比</h2>
+<div class="table-wrap">
+<table class="cmp">
+  <thead><tr><th>维度</th><th>Remove.bg</th><th>设计软件手动抠图</th><th>本地批量脚本</th></tr></thead>
+  <tbody>
+    <tr><td>速度</td><td>最快，单张数秒</td><td>慢，看熟练度</td><td>批量快</td></tr>
+    <tr><td>发丝边缘</td><td>较好</td><td>取决于技术</td><td>取决于模型</td></tr>
+    <tr><td>成本</td><td>高清按张付费</td><td>软件成本</td><td>需显卡与部署</td></tr>
+    <tr><td>适用</td><td>零散、非敏感图</td><td>精细单张</td><td>大批量固定场景</td></tr>
+  </tbody>
+</table>
+</div>
+
+      <h2>Remove.bg 常见问题</h2><div class="faq"><details><summary>Remove.bg 免费吗？</summary><p class="answer">免费可以预览低分辨率结果，下载高清图需要额度。批量与 API 按量付费。</p></details><details><summary>抠出来的图有白边吗？</summary><p class="answer">多数情况没有，算法会处理半透明边缘。深色底换浅色底时仍建议放大检查发丝部分。</p></details><details><summary>支持批量处理吗？</summary><p class="answer">网页版单张为主，付费套餐支持批量上传，大批量建议用 API 接入自己的流程。</p></details><details><summary>能处理透明物体吗？</summary><p class="answer">玻璃、纱质、水花这类半透明主体识别困难，结果常需要手动修补。</p></details><details><summary>上传的图片会被保存吗？</summary><p class="answer">会经过服务器处理，可在账号中删除记录。未公开的产品图与人物照片，上传前先确认授权。</p></details></div>
+  </div>
+  </div>
+
+  <div class="rel">
+    <h2 class="rel-title">同类工具，横向看一遍再决定</h2>
+    <div class="cards"><a class="card" href="../tools/tinypng.html" data-cat="tools" data-k="TinyPNG TinyPNG · 图片压缩 把 PNG、JPEG 压到原来的一半以下，肉眼几乎看不出差别。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▧</div>
+    <div>
+      <div class="card-name">TinyPNG</div>
+      <div class="card-sub">TinyPNG · 图片压缩</div>
+    </div>
+  </div>
+  <p class="card-desc">把 PNG、JPEG 压到原来的一半以下，肉眼几乎看不出差别。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/canva.html" data-cat="ai-media" data-k="Canva 可画 Canva · 在线设计 模板覆盖海报、封面、PPT，拖拽就能出图，AI 抠图和扩图省掉来回切软件。 AI 绘画与影音">
+  <div class="card-top">
+    <div class="card-icon">◎</div>
+    <div>
+      <div class="card-name">Canva 可画</div>
+      <div class="card-sub">Canva · 在线设计</div>
+    </div>
+  </div>
+  <p class="card-desc">模板覆盖海报、封面、PPT，拖拽就能出图，AI 抠图和扩图省掉来回切软件。</p>
+  <div class="card-foot"><span>AI 绘画与影音</span><span class="go">查看详情 →</span></div>
+</a><a class="card" href="../tools/ilovepdf.html" data-cat="tools" data-k="iLovePDF iLovePDF · PDF 工具箱 合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。 效率与工具">
+  <div class="card-top">
+    <div class="card-icon">▦</div>
+    <div>
+      <div class="card-name">iLovePDF</div>
+      <div class="card-sub">iLovePDF · PDF 工具箱</div>
+    </div>
+  </div>
+  <p class="card-desc">合并、拆分、压缩、转换，二十多个 PDF 小工具打开网页就能用。</p>
+  <div class="card-foot"><span>效率与工具</span><span class="go">查看详情 →</span></div>
+</a></div>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="../index.html" aria-label="拾光导航"><span class="brand-mark">拾</span>拾光导航</a>
+      <p class="footer-about">按用途整理的工具入口。每一条都配了使用说明、适用边界和上手步骤，帮你在打开之前就知道它合不合适。</p>
+    </div>
+    <div>
+      <div class="footer-title">工具分类</div>
+      <div class="footer-links"><a href="../category/ai-chat.html">AI 对话与写作</a><a href="../category/ai-media.html">AI 绘画与影音</a><a href="../category/game.html">游戏与娱乐</a><a href="../category/tools.html">效率与工具</a></div>
+    </div>
+    <div>
+      <div class="footer-title">站点</div>
+      <div class="footer-links">
+        <a href="../index.html">网站首页</a>
+        <a href="../about.html">关于本站</a>
+        <a href="../submit.html">提交收录</a>
+        <a href="../disclaimer.html">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-col-last">
+      <div class="footer-title">条款与反馈</div>
+      <div class="footer-links">
+        <a href="../privacy.html">隐私政策</a>
+        <a href="../copyright.html">版权声明</a>
+        <a href="mailto:admin@appsnav.com">admin@appsnav.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 拾光导航 · 本站不托管第三方资源，所有链接均指向原网站</span>
+    <span class="mail">内容纠错与合作：<a href="mailto:admin@appsnav.com">admin@appsnav.com</a></span>
+  </div>
+</footer>
+<script src="../assets/main.js" defer></script>
+</body>
+</html>
